@@ -48,6 +48,9 @@
     nav a:hover {
        background-color: #444;
     }
+    nav a:active {
+       background-color: grey;
+    }
      
     /*main rules here */
      
