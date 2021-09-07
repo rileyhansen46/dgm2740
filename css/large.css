@@ -14,9 +14,6 @@
     nav a{
         padding: .5rem 1rem;
     }
-    nav a:active {
-        background-color: grey;
-    }
     main figure{
         width: 35%;
     }

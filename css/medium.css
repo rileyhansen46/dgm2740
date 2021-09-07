@@ -6,9 +6,6 @@
     nav ul li{
         flex-basis:25%;
     }
-    nav a:active {
-        background-color: grey;
-    }
     main figure{
         float: right;
         width: 50%;
