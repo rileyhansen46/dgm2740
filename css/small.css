@@ -52,9 +52,15 @@
        background-color: grey;
     }
 
-    .logo{
-       
-    }
+    .hero {
+      height: 30%;
+      position: relative;
+  }
+
+  .logo{
+      float: left;
+      max-width: 5rem;
+  }
     /*main rules here */
      
     main{
