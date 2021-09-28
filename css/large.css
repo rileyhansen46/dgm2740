@@ -22,7 +22,17 @@
         column-count: 3;
     }
 
-   
+    .hero {
+        height: auto;
+        max-width: 90%;
+        position: relative;
+    }
+  
+    .logo{
+        float: left;
+        max-width: 5rem;
+        height:auto; 
+    }
   
  } /* end of media query */
  

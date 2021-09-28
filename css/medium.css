@@ -7,6 +7,18 @@
         flex-basis:25%;
     }
 
+    .hero {
+        height: auto;
+        max-width: 90%;
+        position: relative;
+    }
+  
+    .logo{
+        float: left;
+        max-width: 5rem;
+        height:auto; 
+    }
+
     main figure{
         float: right;
         width: 50%;
