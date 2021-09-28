@@ -61,7 +61,8 @@
   .logo{
       float: left;
       max-width: 5rem;
-      height:auto; 
+      height:auto;
+      padding: 1rem;
   }
     /*main rules here */
      
