@@ -21,6 +21,11 @@
     div.news{
         column-count: 3;
     }
+
+    .hero {
+        height: 50%;
+        position: relative;
+    }
   
   
  } /* end of media query */
