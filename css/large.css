@@ -29,6 +29,7 @@
   
     .logo{
         float: left;
+        max-width: 1rem;
     }
   
  } /* end of media query */
