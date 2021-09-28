@@ -22,15 +22,7 @@
         column-count: 3;
     }
 
-    .hero {
-        height: 30%;
-        position: relative;
-    }
-  
-    .logo{
-        float: left;
-        max-width: 5rem;
-    }
+   
   
  } /* end of media query */
  

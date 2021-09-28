@@ -53,13 +53,15 @@
     }
 
     .hero {
-      height: 30%;
+      height: auto;
+      max-width: 90%;
       position: relative;
   }
 
   .logo{
       float: left;
       max-width: 5rem;
+      height:auto; 
   }
     /*main rules here */
      
