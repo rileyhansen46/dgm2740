@@ -1,0 +1,168 @@
+/* rules here will be applied to all sizes, medium and large will modify from that */
+
+/* Prevent adjustments of font size when orientation chagnes, iphones. */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /* Apply a natural box layout model to all elements */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  // Body Rules //
+  body {
+    font-family: $fontFamily;
+    max-width: 71.25rem;
+    overflow-x: hidden;
+    margin: auto;
+  }
+  
+  // Header Rules //
+  header {
+    padding: 0.5rem 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: flex-end;
+  
+    img {
+      width: auto;
+      height: 100px;
+    }
+  
+    div.logo {
+      display: flex;
+      align-items: baseline;
+      flex-direction: column;
+  
+      h1,
+      h2 {
+        margin: 0;
+      }
+  
+      h2 {
+        font-size: 98%;
+      }
+    }
+  }
+  // Nav //
+  
+  nav {
+    width: 100%;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      background-color: $primaryColor;
+  
+      li {
+        list-style: none;
+        width: 25%;
+        height: 3rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+        }
+        
+        a.last {
+          margin-right: 0;
+        }
+      }
+  
+      div.line {
+        width: 0.5%;
+        background-color: lighten($primaryColor, 10%);
+        height: 1.5rem;
+        margin: 0;
+        align-self: center;
+      }
+  
+      li.active {
+        background-color: darken($primaryColor, 10%);
+  
+        a.active {
+          color: white;
+        }
+      }
+  
+      li:hover {
+        background-color: lighten($primaryColor, 15%);
+  
+        a:hover {
+          color: darken(white, 10%);
+        }
+      }
+    }
+  }
+  
+  // Main //
+  main {
+    padding: 0.5rem 2%;
+    width: 100%;
+    margin: auto;
+  
+    h1 {
+      margin: 0;
+    }
+  
+    div.content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0.5rem 2%;
+        flex-basis: 46%;
+  
+        img.fruit-img {
+          width: 100%;
+          height: auto;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+  
+        img.fruit-img:hover {
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+  
+        figcaption {
+          margin-top: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  // Footer //
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 1% 2%;
+    color: white;
+    background-color: $primaryColor;
+  
+    a {
+      cursor: pointer;
+      color: white;
+    }
+  }
