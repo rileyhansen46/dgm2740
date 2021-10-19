@@ -481,7 +481,7 @@
    margin: 0% 1% 0% 0%;
  }
  
- div#headerWrapper header figure.logo img {
+ div#headerWrapper header figure .logo img {
    width: auto;
    height: 100px;
  }
