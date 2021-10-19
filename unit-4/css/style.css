@@ -458,7 +458,8 @@
  }
  
  div#headerWrapper {
-   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../images/national_parks.jpeg);
+   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+   background-image: url(../images/national_parks.jpeg);
    height: 140px;
  }
  
