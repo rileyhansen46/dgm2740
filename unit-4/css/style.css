@@ -458,7 +458,8 @@
  }
  
  div#headerWrapper {
-   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) url(../images/national_parks.jpeg);
+   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4))), url(../images/national_parks.jpeg);
+   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../images/national_parks.jpeg);
    height: 140px;
  }
  
@@ -478,8 +479,6 @@
            flex-direction: column;
  }
  
-
-
  div#headerWrapper header h1,
  div#headerWrapper header h2 {
    margin: 0;
@@ -671,8 +670,8 @@
  
  @media only screen and (min-width: 560px) {
    div#headerWrapper {
-     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4))), url(../img/header-yellowstone-assets/header-medium.jpg);
-     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/header-yellowstone-assets/header-medium.jpg);
+     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4))), url(../images/national_parks.jpeg);
+     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../images/national_parks.jpeg);
      height: 240px;
    }
    div#navWrapper {
