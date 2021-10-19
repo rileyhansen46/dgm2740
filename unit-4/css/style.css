@@ -459,7 +459,6 @@
  
  div#headerWrapper {
   background-image: url(../images/national_parks.jpeg);
-  background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
    height: 140px;
  }
  
