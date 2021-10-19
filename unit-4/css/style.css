@@ -458,8 +458,9 @@
  }
  
  div#headerWrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
   background-image: url(../images/national_parks.jpeg);
-   background: linear-gradient(rgba(0, 0, 0, 0.5))
+   
    height: 140px;
  }
  
@@ -478,6 +479,7 @@
        -ms-flex-direction: column;
            flex-direction: column;
  }
+
 
  div#headerWrapper header h1,
  div#headerWrapper header h2 {
