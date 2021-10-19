@@ -456,13 +456,9 @@
    margin: auto;
    background-color: whitesmoke;
  }
-
- .hero{
-  background-image: url(../images/national_parks.jpeg);
-}
  
  div#headerWrapper {
-   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) url(../images/national_parks.jpeg);
    height: 140px;
  }
  
