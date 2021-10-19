@@ -459,7 +459,7 @@
  
  div#headerWrapper {
    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4))), url(../img/header-yellowstone-assets/header-small.jpg);
-   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../img/header-yellowstone-assets/header-small.jpg);
+   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../images/national_parks.jpeg);
    height: 140px;
  }
  
