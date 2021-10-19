@@ -479,8 +479,7 @@
            flex-direction: column;
  }
  
- div#headerWrapper header h1,
- div#headerWrapper header h2 {
+ div#headerWrapper header h1 h2 {
    margin: 0;
    color: white;
  }
