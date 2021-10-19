@@ -473,7 +473,7 @@
    background-color: whitesmoke;
  }
  
- div#headerWrapper header figure.logo {
+ div#headerWrapper header figure .logo {
    float: left;
    background-color: transparent;
    height: 100px;
