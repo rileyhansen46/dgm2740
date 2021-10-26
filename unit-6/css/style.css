@@ -594,15 +594,16 @@
    shape-outside: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
  }
  
- div#mainWrapper main div.gallery figure {
+ div#mainWrapper main div .gallery figure {
    width: 100%;
    height: 0;
    padding-bottom: 45%;
    position: relative;
    margin: 0;
+   
  }
  
- div#mainWrapper main div.gallery figure img {
+ div#mainWrapper main div .gallery figure img {
    width: 100%;
    height: auto;
    position: absolute;
