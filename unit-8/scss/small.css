@@ -1,0 +1,168 @@
+/* rules here will be applied to all sizes, medium and large will modify from that */
+
+/* Apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  //Body
+  body {
+    font-family: $fontFamily;
+    overflow-x: hidden;
+  }
+  
+  // Header Style
+  div#headerWrapper {
+    background-color: grey;
+    padding: 0.1% 0;
+    header {
+      width: 100%;
+      div.logo {
+        
+        height: 5rem;
+        width: 5rem;
+        border-radius: 10px;
+        margin: 1% 1%;
+  
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  // End of Header Style
+  
+  //  Nav Style
+  div#navWrapper {
+    background-color: whitesmoke;
+  
+    nav {
+      button {
+        margin: 0.2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #555;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+          a {
+            display: block;
+            padding: 0.8rem 2%;
+            text-decoration: none;
+            color: black;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+          }
+  
+          a:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+          }
+        }
+        li.active a {
+          background-color: rgba(0, 0, 0, 0.6);
+          color: white;
+        }
+      }
+  
+      ul.hide {
+        display: none;
+      }
+    }
+  }
+  
+  // End of Nav Style
+  
+  // Main Style
+  div#mainWrapper {
+    main {
+      div.img-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "title title"
+          "sub sub"
+          "bottom bottom";
+  
+        div.lead-img {
+          text-align: center;
+          grid-area: title;
+          padding: 0.5rem 2vw;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+  
+        div.teaser-img {
+          text-align: center;
+          padding: 0.5rem 2vw;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      div.citation {
+        padding: 0 2vw;
+  
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+  
+  // End of Main Style
+  
+  // Footer Style
+  div#footerWrapper {
+    background-color: darken(grey, 20%);
+    padding: 0.1% 0;
+    margin-top: 2%;
+    footer {
+      div.footer-grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+  
+        div.footer-divs {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 2vw;
+          color: white;
+          a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            margin-bottom: 2%;
+          }
+        }
+      }
+  
+      p {
+        color: white;
+        text-align: center;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  // End of Footer Style
+  
+  // clear fix
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

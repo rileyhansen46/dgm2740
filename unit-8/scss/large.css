@@ -1,0 +1,28 @@
+main {
+    max-width: 80rem;
+    margin: auto;
+  }
+  
+  div#mainWrapper {
+    main {
+      div.img-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "lead lead lead first"
+        "lead lead lead second"
+        "third third third third";
+        div.lead-img {
+          grid-area: lead;
+        }
+      }
+    }
+  }
+  
+  div#footerWrapper {
+    footer {
+      div.footer-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
