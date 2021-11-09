@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maxinum-scale=2.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header>
+            <h1>Boston City</h1>
+            <h2>Where History Comes Alive</h2>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <button id="btn" class="ac">&#9776;</button>
+            <ul class="hide" id="ul-nav">
+                <li class="active" id="top"><a href="#" class="top">Visit</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pay Bills</a></li>
+                <li><a href="#">Meetings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="single-item">
+            <picture>
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline1.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline1.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline1.jpg">
+                <img src="img/tablet-imgs/skyline1.jpg" alt="og example" width="1600" height="500">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
+            </picture>
+
+            <picture>
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline2.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline2.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline2.jpg">
+                <img src="img/tablet-imgs/skyline2.jpg" alt="" width="1600" height="500">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
+            </picture>
+
+            <picture>
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline3.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline3.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline3.jpg">
+                <img src="img/tablet-imgs/skyline3.jpg" alt="og example" width="1600" height="500">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
+            </picture>
+
+            <picture>
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline4.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline4.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline4.jpg">
+                <img src="img/tablet-imgs/skyline4.jpg" alt="og example" width="1600" height="500">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
+            </picture>
+        </div>
+
+        <div class="plan-visit-div">
+            <h1>Plan Your Visit</h1>
+            <div class="cards">
+                <div class="card-1">
+                    <a href="#">
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <h3>Places To Stay</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-2">
+                    <a href="#">
+                        <div>
+                            <i class="fas fa-walking"></i>
+                            <h3>Walk The Red Line</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-3">
+                    <a href="#">
+                        <div>
+                            <i class="fas fa-city"></i>
+                            <h3>Pass To The City</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-4">
+                    <a href="#">
+                        <div>
+                            <i class="fas fa-utensils"></i>
+                            <h3>Find Dining</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>
+                &copy; 2021 &bullet; Riley Hansen &bull; Login &bull;
+                <a href="../index.html">Assignment Page</a>
+            </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script> -->
+
+    <script>
+        $(document).ready(function () {
+
+            $('#btn').click(function () {
+                $('#ul-nav').slideToggle();
+            })
+
+
+            $('.single-item').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: "ease-in",
+                autoplay: true,
+                autoplaySpeed: 30000
+            });
+        })
+    </script>
+</body>
+
+</html>

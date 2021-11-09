@@ -1,0 +1,23 @@
+header,
+nav,
+main,
+footer {
+  max-width: 64rem;
+  margin: auto;
+}
+
+div#headerWrapper {
+  background-position: center;
+}
+
+main {
+  div.plan-visit-div {
+    div.cards {
+      @for $z from 0 through 4 {
+        div.card-#{$z} {
+          flex-basis: 23%;
+        }
+      }
+    }
+  }
+}

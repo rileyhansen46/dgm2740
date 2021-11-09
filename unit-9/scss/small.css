@@ -1,0 +1,199 @@
+/* rules here will be applied to all sizes, medium and large will modify from that */
+
+/* Apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  //Body
+  body {
+    font-family: $fontFamily;
+    overflow-x: hidden;
+  }
+  
+  // Header Style
+  div#headerWrapper {
+    background: linear-gradient(
+        rgba($secondaryColor, 0.5),
+        rgba($secondaryColor, 0.5)
+      ),
+      url("../img/mobile-imgs/header-mobile.jpg");
+    width: 100%;
+    height: 90px;
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 0 2%;
+      h1,
+      h2 {
+        color: white;
+        padding: 0;
+        margin: 0;
+      }
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.4;
+        z-index: -1;
+      }
+    }
+  }
+  
+  // End of Header Style
+  
+  //  Nav Style
+  
+  // scroll-behavior: auto;
+  div#navWrapper {
+    background-color: $primaryColor;
+    nav {
+      button {
+        margin: 2% 2%;
+        border-style: none;
+        background-color: lighten($primaryColor, 10%);
+        color: white;
+        font-size: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+  
+        li a {
+          display: block;
+          padding: 2% 2%;
+          text-decoration: none;
+          color: white;
+          border-top: solid 1px rgba(0, 0, 0, 0.2);
+        }
+        li a.top {
+          border-top: none;
+        }
+  
+        li.active {
+          background-color: darken($primaryColor, 10%);
+        }
+        li:hover {
+          background-color: lighten($primaryColor, 10%);
+        }
+      }
+    }
+  }
+  
+  // End of Nav Style
+  
+  // Main Style
+  main {
+    div.single-item {
+      div {
+        picture {
+          position: relative;
+          img {
+            width: 100%;
+            height: auto;
+          }
+  
+          div {
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.9)
+            );
+            padding: 2%;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            width: 100%;
+          }
+        }
+      }
+    }
+  
+    div.plan-visit-div {
+      h1 {
+        padding: 2%;
+      }
+      div.cards {
+        display: flex;
+        flex-wrap: wrap;
+        @for $i from 0 through 4 {
+          div.card-#{$i} {
+            background-color: $secondaryColor;
+            background-image: url("../img/mobile-imgs/card#{$i}.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 1%;
+            flex-basis: 100%;
+            a {
+              display: block;
+              width: 100%;
+              height: 300px;
+              text-decoration: none;
+              color: white;
+              padding: 0 2%;
+              text-align: center;
+  
+              div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                font-size: 2rem;
+                width: 100%;
+              }
+            }
+            a:hover {
+              background: none;
+              text-shadow: 0 0 4px black;
+              
+            }
+          }
+        }
+  
+        div.card-1 a {
+          background-color: red;
+        }
+        div.card-2 a {
+          background-color: blue;
+        }
+        div.card-3 a {
+          background-color: grey;
+        }
+        div.card-4 a {
+          background-color: green;
+        }
+      }
+    }
+  }
+  
+  // End of Main Style
+  
+  // Footer Style
+  div#footerWrapper {
+    margin-top: 2%;
+    background-color: $secondaryColor;
+    padding: 1% 2%;
+    text-align: center;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+  // End of Footer Style
+  
+  // clear fix
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .hide {
+    display: none;
+  }

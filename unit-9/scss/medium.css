@@ -1,0 +1,39 @@
+div#navWrapper {
+    nav {
+        button {
+            display: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0 2%;
+            
+            li {
+                display: flex;
+                align-items: center;
+                margin-right: 1%;
+                width: 50%;
+                height: 44px;
+                justify-content: center;
+                a {
+                    border: none;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+}
+
+
+main {
+    div.plan-visit-div {
+        div.cards {
+            @for $e from 0 through 4 {
+                div.card-#{$e} {
+                    flex-basis: 48%;
+                }
+            }
+        }
+    }
+}
