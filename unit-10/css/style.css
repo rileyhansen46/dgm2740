@@ -450,359 +450,283 @@
  }
  
  div#headerWrapper {
-   background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 26, 35, 0.5)), to(rgba(12, 26, 35, 0.5))), url("../img/mobile-imgs/header-mobile.jpg");
-   background: linear-gradient(rgba(12, 26, 35, 0.5), rgba(12, 26, 35, 0.5)), url("../img/mobile-imgs/header-mobile.jpg");
    width: 100%;
-   height: 90px;
+   background-color: whitesmoke;
  }
  
  div#headerWrapper header {
+   width: 100%;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
-   -webkit-box-orient: vertical;
+   -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-           flex-direction: column;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   height: 100%;
-   padding: 0 2%;
- }
- 
- div#headerWrapper header h1,
- div#headerWrapper header h2 {
-   color: white;
-   padding: 0;
-   margin: 0;
+       -ms-flex-direction: row;
+           flex-direction: row;
+   -webkit-box-align: baseline;
+       -ms-flex-align: baseline;
+           align-items: baseline;
+   padding: 2%;
+   background-color: whitesmoke;
+   color: rgba(0, 0, 0, 0.9);
  }
  
  div#headerWrapper header img {
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
+   width: 60px;
    height: auto;
-   opacity: 0.4;
-   z-index: -1;
+ }
+ 
+ div#headerWrapper header h1 {
+   margin: 0;
+   margin-left: 1%;
  }
  
  div#navWrapper {
-   background-color: #ea4832;
+   width: 100%;
+   background-color: #27aae1;
+ }
+ 
+ div#navWrapper nav {
+   width: 100%;
+   padding: 0 2%;
  }
  
  div#navWrapper nav button {
-   margin: 2% 2%;
-   border-style: none;
-   background-color: #ef7160;
-   color: white;
-   font-size: 20px;
+   position: relative;
+   background: none;
+   border: none;
+   display: inline-block;
+   height: 44px;
+   width: 44px;
+   cursor: pointer;
  }
  
- div#navWrapper nav ul {
+ div#navWrapper nav button span.line {
+   position: absolute;
+   height: 2px;
+   width: 60%;
+   background-color: white;
+   border-radius: 2px;
+   -webkit-transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
+   transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
+ }
+ 
+ div#navWrapper nav button .top,
+ div#navWrapper nav button .middle,
+ div#navWrapper nav button .bottom {
+   left: 20%;
+ }
+ 
+ div#navWrapper nav button .top {
+   top: 29%;
+ }
+ 
+ div#navWrapper nav button .middle {
+   top: 48%;
+ }
+ 
+ div#navWrapper nav button .bottom {
+   top: 67%;
+ }
+ 
+ div#navWrapper nav button span.text {
+   margin: 0;
+   color: white;
+   position: relative;
+   margin-left: 2.25rem;
+ }
+ 
+ div#navWrapper nav #hamburgerBtn.open .top {
+   -webkit-transform: rotate(45deg);
+           transform: rotate(45deg);
+   top: 48%;
+ }
+ 
+ div#navWrapper nav #hamburgerBtn.open .middle,
+ div#navWrapper nav #hamburgerBtn.open .bottom {
+   -webkit-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+   top: 48%;
+ }
+ 
+ div#navWrapper nav ul.ul-nav {
    list-style-type: none;
    padding: 0;
    margin: 0;
+   padding: 2%;
  }
  
- div#navWrapper nav ul li a {
+ div#navWrapper nav ul.ul-nav li {
+   margin-bottom: 0.5rem;
+   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+ }
+ 
+ div#navWrapper nav ul.ul-nav li a {
    display: block;
-   padding: 2% 2%;
+   font-size: 20px;
+   width: 100%;
+   height: 32px;
    text-decoration: none;
-   color: white;
+   color: whitesmoke;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+ }
+ 
+ div#navWrapper nav ul.ul-nav li.sub-nav ul.sub-ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   padding: 2%;
+ }
+ 
+ div#navWrapper nav ul.ul-nav li.sub-nav ul.sub-ul li {
+   border-bottom: none;
    border-top: solid 1px rgba(0, 0, 0, 0.2);
  }
  
- div#navWrapper nav ul li a.top {
-   border-top: none;
+ div#navWrapper nav ul.ul-nav li.sub-nav .sub-navSpan {
+   margin-left: 5px;
  }
  
- div#navWrapper nav ul li.active {
-   background-color: #d32c16;
+ div#navWrapper nav ul.ul-nav li.active {
+   background-color: #1a8bbb;
  }
  
- div#navWrapper nav ul li:hover {
-   background-color: #ef7160;
+ div#navWrapper nav ul.ul-nav li:hover {
+   background-color: #54bce7;
  }
  
- main div.single-item div picture {
-   position: relative;
+ div#mainWrapper {
+   width: 100%;
+   color: rgba(0, 0, 0, 0.9);
  }
  
- main div.single-item div picture img {
+ div#mainWrapper main {
+   padding: 0 2%;
+ }
+ 
+ div#mainWrapper main div.thanks {
+   margin: 5rem 0;
+   width: 100%;
+   height: 60vh;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+ }
+ 
+ div#mainWrapper main div.thanks .lottie {
    width: 100%;
    height: auto;
  }
  
- main div.single-item div picture div {
-   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9)));
-   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
-   padding: 2%;
-   position: absolute;
-   bottom: 0;
-   color: white;
-   width: 100%;
+ div#mainWrapper main form fieldset {
+   border: solid 1px #27aae1;
+   margin: 1rem 0;
+   border-radius: 5px;
+   padding: 1rem 2%;
  }
  
- main div.plan-visit-div h1 {
-   padding: 2%;
+ div#mainWrapper main form fieldset legend {
+   color: #27aae1;
+   margin: 0 0.5rem;
+   padding: 0 0.5rem;
  }
  
- main div.plan-visit-div div.cards {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -ms-flex-wrap: wrap;
-       flex-wrap: wrap;
- }
- 
- main div.plan-visit-div div.cards div.card-0 {
-   background-color: #0c1a23;
-   background-image: url("../images/mobile-images/header-mobile.jpeg");
-   background-repeat: no-repeat;
-   background-position: center;
-   margin: 1%;
-   -ms-flex-preferred-size: 100%;
-       flex-basis: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-0 a {
+ div#mainWrapper main form fieldset label.top,
+ div#mainWrapper main form fieldset div.radio-lable {
    display: block;
+   padding-bottom: 1rem;
+   font-size: 0.9rem;
+ }
+ 
+ div#mainWrapper main form fieldset label.top i,
+ div#mainWrapper main form fieldset div.radio-lable i {
+   color: red;
+ }
+ 
+ div#mainWrapper main form fieldset label.top input,
+ div#mainWrapper main form fieldset div.radio-lable input {
+   margin-top: 5px;
    width: 100%;
-   height: 300px;
-   text-decoration: none;
-   color: white;
+   height: 44px;
+   border-radius: 5px;
+   border-style: none;
+   background-color: rgba(5, 5, 5, 0.1);
    padding: 0 2%;
-   text-align: center;
  }
  
- main div.plan-visit-div div.cards div.card-0 a div {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-           flex-direction: column;
-   height: 100%;
-   font-size: 2rem;
-   width: 100%;
+ div#mainWrapper main form fieldset div.radio-label i {
+   color: red;
  }
  
- main div.plan-visit-div div.cards div.card-0 a:hover {
-   background: none;
-   text-shadow: 0 0 4px black;
- }
- 
- main div.plan-visit-div div.cards div.card-1 {
-   background-color: #0c1a23;
-   background-image: url("../images/mobile-images/card1.jpeg");
-   background-repeat: no-repeat;
-   background-position: center;
-   margin: 1%;
-   -ms-flex-preferred-size: 100%;
-       flex-basis: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-1 a {
+ div#mainWrapper main form fieldset .color-picker {
    display: block;
+ }
+ 
+ div#mainWrapper main form fieldset .color-picker select {
+   margin-top: 5px;
    width: 100%;
-   height: 300px;
-   text-decoration: none;
-   color: white;
+   height: 44px;
    padding: 0 2%;
-   text-align: center;
  }
  
- main div.plan-visit-div div.cards div.card-1 a div {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-           flex-direction: column;
-   height: 100%;
-   font-size: 2rem;
-   width: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-1 a:hover {
-   background: none;
-   text-shadow: 0 0 4px black;
- }
- 
- main div.plan-visit-div div.cards div.card-2 {
-   background-color: #0c1a23;
-   background-image: url("../images/mobile-images/card2.jpeg");
-   background-repeat: no-repeat;
-   background-position: center;
-   margin: 1%;
-   -ms-flex-preferred-size: 100%;
-       flex-basis: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-2 a {
+ div#mainWrapper main form fieldset label.sbs {
    display: block;
+   padding: 0.75rem;
+   color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ div#mainWrapper main form input.submitBtn {
    width: 100%;
-   height: 300px;
-   text-decoration: none;
-   color: white;
-   padding: 0 2%;
-   text-align: center;
+   height: 44px;
+   border-radius: 20px;
+   border-style: none;
+   background-color: #27aae1;
+   color: whitesmoke;
  }
  
- main div.plan-visit-div div.cards div.card-2 a div {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-           flex-direction: column;
-   height: 100%;
-   font-size: 2rem;
-   width: 100%;
+ div#mainWrapper main form input.submitBtn:hover {
+   background-color: #1d9cd1;
+   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
  }
  
- main div.plan-visit-div div.cards div.card-2 a:hover {
-   background: none;
-   text-shadow: 0 0 4px black;
+ div#mainWrapper main form label.top input:required, div#mainWrapper main form .selectColor:required {
+   border-left: #da2a2a solid 6px;
  }
  
- main div.plan-visit-div div.cards div.card-3 {
-   background-color: #0c1a23;
-   background-image: url("../images/mobile-images/card3.jpeg");
-   background-repeat: no-repeat;
-   background-position: center;
-   margin: 1%;
-   -ms-flex-preferred-size: 100%;
-       flex-basis: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-3 a {
-   display: block;
-   width: 100%;
-   height: 300px;
-   text-decoration: none;
-   color: white;
-   padding: 0 2%;
-   text-align: center;
- }
- 
- main div.plan-visit-div div.cards div.card-3 a div {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-           flex-direction: column;
-   height: 100%;
-   font-size: 2rem;
-   width: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-3 a:hover {
-   background: none;
-   text-shadow: 0 0 4px black;
- }
- 
- main div.plan-visit-div div.cards div.card-4 {
-   background-color: #0c1a23;
-   background-image: url("../images/mobile-images/card4.jpeg");
-   background-repeat: no-repeat;
-   background-position: center;
-   margin: 1%;
-   -ms-flex-preferred-size: 100%;
-       flex-basis: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-4 a {
-   display: block;
-   width: 100%;
-   height: 300px;
-   text-decoration: none;
-   color: white;
-   padding: 0 2%;
-   text-align: center;
- }
- 
- main div.plan-visit-div div.cards div.card-4 a div {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-           flex-direction: column;
-   height: 100%;
-   font-size: 2rem;
-   width: 100%;
- }
- 
- main div.plan-visit-div div.cards div.card-4 a:hover {
-   background: none;
-   text-shadow: 0 0 4px black;
- }
- 
- main div.plan-visit-div div.cards div.card-1 a {
-   background-color: red;
- }
- 
- main div.plan-visit-div div.cards div.card-2 a {
-   background-color: blue;
- }
- 
- main div.plan-visit-div div.cards div.card-3 a {
-   background-color: grey;
- }
- 
- main div.plan-visit-div div.cards div.card-4 a {
-   background-color: green;
+ div#mainWrapper main form label.top input:required:valid, div#mainWrapper main form .selectColor:required:valid {
+   border-left: #27aae1 solid 6px;
  }
  
  div#footerWrapper {
-   margin-top: 2%;
-   background-color: #0c1a23;
-   padding: 1% 2%;
-   text-align: center;
-   color: white;
+   width: 100%;
+   background-color: #27aae1;
  }
  
- div#footerWrapper a {
-   color: white;
+ div#footerWrapper footer {
+   text-align: center;
+   padding: 1% 0;
+   color: whitesmoke;
+   margin-top: 5%;
+ }
+ 
+ div#footerWrapper footer a {
+   color: whitesmoke;
  }
  
  .clearfix:after {
@@ -811,7 +735,7 @@
    clear: both;
  }
  
- .hide {
+ .hidden {
    display: none;
  }
  
@@ -819,53 +743,37 @@
    div#navWrapper nav button {
      display: none;
    }
-   div#navWrapper nav ul {
+   div#navWrapper nav ul.ul-nav {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     -webkit-box-orient: horizontal;
-     -webkit-box-direction: normal;
-         -ms-flex-direction: row;
-             flex-direction: row;
-     padding: 0 2%;
+     padding: 0;
    }
-   div#navWrapper nav ul li {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -webkit-box-align: center;
-         -ms-flex-align: center;
-             align-items: center;
-     margin-right: 1%;
-     width: 50%;
-     height: 44px;
-     -webkit-box-pack: center;
-         -ms-flex-pack: center;
-             justify-content: center;
+   div#navWrapper nav ul.ul-nav li {
+     margin: 0;
+     border-bottom: none;
+     border-right: solid 1px rgba(0, 0, 0, 0.1);
+     padding: 0 10px;
    }
-   div#navWrapper nav ul li a {
-     border: none;
-     text-align: center;
+   div#navWrapper nav ul.ul-nav li a {
+     padding: 1.25rem 0;
    }
-   main div.plan-visit-div div.cards div.card-0 {
-     -ms-flex-preferred-size: 48%;
-         flex-basis: 48%;
+   div#navWrapper nav ul.ul-nav :nth-last-child(1) {
+     border-right: none;
    }
-   main div.plan-visit-div div.cards div.card-1 {
-     -ms-flex-preferred-size: 48%;
-         flex-basis: 48%;
+   div#navWrapper nav ul.ul-nav li.sub-nav ul.sub-ul {
+     position: absolute;
+     background-color: #27aae1;
    }
-   main div.plan-visit-div div.cards div.card-2 {
-     -ms-flex-preferred-size: 48%;
-         flex-basis: 48%;
+   div#navWrapper nav ul.ul-nav li.sub-nav ul.sub-ul li {
+     border-right: none;
    }
-   main div.plan-visit-div div.cards div.card-3 {
-     -ms-flex-preferred-size: 48%;
-         flex-basis: 48%;
+   div#mainWrapper main form label {
+     max-width: 20rem;
    }
-   main div.plan-visit-div div.cards div.card-4 {
-     -ms-flex-preferred-size: 48%;
-         flex-basis: 48%;
+   div#mainWrapper main form .submitBtn {
+     max-width: 20rem;
+     margin-left: 2%;
    }
  }
  
@@ -876,28 +784,5 @@
    footer {
      max-width: 64rem;
      margin: auto;
-   }
-   div#headerWrapper {
-     background-position: center;
-   }
-   main div.plan-visit-div div.cards div.card-0 {
-     -ms-flex-preferred-size: 23%;
-         flex-basis: 23%;
-   }
-   main div.plan-visit-div div.cards div.card-1 {
-     -ms-flex-preferred-size: 23%;
-         flex-basis: 23%;
-   }
-   main div.plan-visit-div div.cards div.card-2 {
-     -ms-flex-preferred-size: 23%;
-         flex-basis: 23%;
-   }
-   main div.plan-visit-div div.cards div.card-3 {
-     -ms-flex-preferred-size: 23%;
-         flex-basis: 23%;
-   }
-   main div.plan-visit-div div.cards div.card-4 {
-     -ms-flex-preferred-size: 23%;
-         flex-basis: 23%;
    }
  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unit 10 Swag Shop</title>
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header class="clearFix">
+            <img src="logo.svg" alt="Logo">
+            <h1>Swag Shop</h1>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav class="clearFix">
+            <button id="hamburgerBtn">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+                <span class="text openText">Open</span>
+                <span class="text closeText hidden">Close</span>
+            </button>
+
+            <ul class="ul-nav hidden">
+                <li><a href="#">Home</a></li>
+                <li class="sub-nav"><a href="#">Products  <span class="sub-navSpan">&#9660;</span></a>
+                    <ul class="sub-ul hidden">
+                        <li><a href="#">Water Bottles</a></li>
+                        <li><a href="#">Hats</a></li>
+                        <li><a href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Deals</a></li>
+                <li class="active"><a href="#">Order</a></li>
+                <li><a href="#">Customer Reviews</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main class="clearFix">
+            <h1>Order</h1>
+
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label class="top">Full Name<i>*</i> <input type="text" name="fname" placeholder="Jon Doe"
+                            required></label>
+                    <label class="top">Phone<i>*</i> <input type="tel" name="phone"></label>
+                    <label class="top">Email<i>*</i> <input type="email" name="email" placeholder="my@email.com"
+                            required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Swag Information</legend>
+                    <label class="top">Date Needed<i>*</i> <input type="date" name="date" required></label>
+                    <label class="top">Buisness Name<i>*</i> <input type="text" name="buisness" required></label>
+                    <label class="top">Buisness URL <input type="url" name="url" placeholder="https://"></label>
+                    <label class="top color-picker">Color<i>*</i>
+                        <select name="color" required class="selectColor">
+                            <option value="">Please Selecct Color</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="grey">Grey</option>
+                            <option value="Black">Black</option>
+                            <option value="Purple">Purple</option>
+                        </select>
+                    </label>
+                    <label class="top">Quantity <input type="number" name="quantity" placeholder="0"></label>
+
+                    <div class="radio-label">Material<i>*</i> </div>
+                    <label class="sbs"><input type="radio" name="material" value="material"> Alumninum</label>
+                    <label class="sbs"><input type="radio" name="material" value="material"> Plastics</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label class="top">Name on Card<i>*</i> <input type="text" name="fname" required
+                            placeholder="Jon Doe"></label>
+                    <label class="top">Card Number<i>*</i> <input type="number" name="cardNumber" required></label>
+                    <label class="top">Experation Date<i>*</i> <input type="date" name="experation-date"
+                            required></label>
+                </fieldset>
+
+                <input type="submit" value="Order My Swag" class="submitBtn">
+            </form>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>
+                &copy; 2021 &bullet; Riley Hansen &bull; Login &bull;
+                <a href="../index.html">Assignment Page</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
