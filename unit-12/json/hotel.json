@@ -2,28 +2,28 @@
     {
       "id": 1,
       "name": "Hotel California",
-      "photo": "img/hotel-02.jpg",
+      "photo": "images/hotel-02.jpg",
       "address": ["1981 Canyon Dr.", "Lexington, VA 88765"],
       "phone": "+1 656-589-561"
     },
     {
       "id": 2,
       "name": "Tipton Hotel",
-      "photo": "img/hotel-01.jpg",
+      "photo": "images/hotel-01.jpg",
       "address": ["555 Main St.", "Salt Lake City UT, 84111"],
       "phone": "+1 365-456-4201"
     },
     {
       "id": 3,
       "name": "Four Seasons",
-      "photo": "img/hotel-03.jpg",
+      "photo": "images/hotel-03.jpg",
       "address": ["2019 Center St.", "Washington, DC 20125"],
       "phone": "+1 688-453-5603"
     },
     {
       "id": 4,
       "name": "Some Haunted Hotel",
-      "photo": "img/hotel-04.jpg",
+      "photo": "images/hotel-04.jpg",
       "address": ["1555 Desert Rd.", "Las Vegas NV 65745"],
       "phone": "+1 654-235-4560"
     }
