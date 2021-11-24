@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="refresh" content="6; url=index.html">
+    <title>Unit 10 Swag Shop</title>
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header class="clearFix">
+            <img src="logo.svg" alt="Logo">
+            <h1>Swag Shop</h1>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav class="clearFix">
+            <button id="hamburgerBtn">
+                <span class="ui-span1">
+                    <div><span class="ui-el">&equiv;</span> Open</div>
+                </span>
+                <span class="ui-span2 hidden">
+                    <div><span class="ui-el">&#10006;</span> Close</div>
+                </span>
+            </button>
+
+            <ul class="ul-nav hidden">
+                <li><a href="#">Home</a></li>
+                <li class="sub-nav"><a href="#">Products</a>
+                    <ul class="sub-ul hidden">
+                        <li><a href="#">Water Bottles</a></li>
+                        <li><a href="#">Hats</a></li>
+                        <li><a href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Deals</a></li>
+                <li class="active"><a href="#">Order</a></li>
+                <li><a href="#">Customer Reviews</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main class="clearFix">
+            <div class="thanks">
+                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_totrpclr.json"
+                    background="transparent" speed="1" loop autoplay class="lottie">
+                </lottie-player>
+                <h1>We'll get you your Swag!</h1>
+                <p>You'll be redirected in 5 seconds... if not click <a href="index.html">here</a> to go back</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>
+                &copy; 2021 &bullet; Dylan Smith &bull; Login &bull;
+                <a href="../index.html">Assignment Page</a>
+            </p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
